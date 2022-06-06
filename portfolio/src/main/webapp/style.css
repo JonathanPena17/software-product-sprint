@@ -7,3 +7,8 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+img.rounded-corners {
+    border-radius: 50%;
+    padding: 20px;
+  }
