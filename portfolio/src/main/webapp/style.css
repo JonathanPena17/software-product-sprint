@@ -1,9 +1,93 @@
+
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    padding: 10px;
 }
 
 #greeting-container {
   margin-top: 20px;
+}
+/*make portrait image round*/
+img.rounded{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 300px;
+        height: auto;
+        margin-top: 35px;
+}
+
+/*make artist images round*/
+img.rounded-corners {
+    border-radius: 50%;
+    padding: 70px;
+}
+
+/*create box for about me class*/
+.aboutme {
+    
+    background-color: #c9d6df;
+    height: 1175px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+h2 {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+/*rules for paragraphs*/
+p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* create rules for paragraph in blog*/
+p1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    font-family: sans-serif;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Create box for blog post*/
+.blog{
+    margin: auto;
+    width: 700px;
+    font-family: sans-serif;
+    display: block;
+    text-align: left;
+    background-color: #c9d6dF; 
+    padding: 10px;   
 }

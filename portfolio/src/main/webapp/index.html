@@ -7,13 +7,111 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+     <div id="content">
+      <div class="topnav">
+          <a class="active" href="#name">Jonathan Peña</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+      </div>
+
+      <div id = "name" class = "name">
+          <img src="/images/Headshot.jpeg"
+          class="rounded" align= "left"/>
+
+          <h1>Jonathan Peña</h1> 
+          <p>California State Polytechnic University, Pomona</p>
+          <p>B.A. Computer Science</p>
+      </div>
+      
+      <div id = "about" class ="about">
+        <h1>About Me</h1>
+
+        <p>. Hello! My name is Jonathan Pena and I am a rising third-year student attending Cal Poly Pomona. 
+        I am a first-generation student and a son of immigrant parents. I am passionate about science and space. 
+        Hopefully, one day, I can be a part of the Artemis Generation and help progress human exploration. </p>
+    
+        <p>  Outside of school, I have little to no free time. The majority of the time I spend working for my family's 
+        business which is sports field maintenance and renovation. Yet the times when I have a time slot, I spend that 
+        time resting or watching educational videos/podcasts related to cars or science.</p>
+        </p>
+        
+        <p>Click here to get a random fact about me!</p>
+        <button onclick="addRandomGreeting()">Fact</button>
+        <div id="greeting-container"></div>
+
+      </div>
+      
+      <div id = "gallery" class="about">
+        <h1>Gallery</h1>
+        <p1>  This gallery consists of a dream I would love to achieve one day. 
+        My dream is to become a fighter pilot for the U.S. Air Force. Hopefully,
+        I could have the privilege to fly one of my favorite aircrafts seen below.</p1>
+      </div>
+
+      <div class="column">
+
+        <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104506/f-22-raptor/">
+        <img src="/images/F-22-Reflective-coating.jpeg"  style = "float:left" width="200" height="auto">
+        </a>
+        
+        <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/478441/f-35a-lightning-ii/">
+        <img src="/images/F-35.jpeg" style = "float:left" width="200" height="auto">
+        </a>
+
+        <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104490/a-10c-thunderbolt-ii/">
+        <img src="/images/A-10-warthog-flying-tiger-scaled.jpeg" style = "float:left" width="200" height="auto">
+        </a>
+ 
+      </div>
+
+
+      <div id = "blog" class = "blogheader">
+        <h1>Blog</h1> 
+      </div> 
+
+      <div class = "blog">
+        <h1>Hidden Talent</h1>
+        <p1>  A hidden talent that I have that many do not know is that I am a great Bachata dancer. 
+        Bachata is a genre of Hispanic music that originated in the Dominican Republic and it is 
+        a romantic dance that needs a partner. I would consider myself a stiff person when it comes 
+        to dancing or just any regular activities, but when that specific genre of music plays I am 
+        a completely different person. When I used to be a chambelan for a couple of girls' quinceañeras, 
+        I was always the main dancer and did solos with the quinceañera whenever they wanted a choreographed Bachata dance for their big day. If you are new to the genre 
+        of music, below will be the link to my bachata playlist. -June 7,2022 </p1>
+        <br/>
+        <a href="https://open.spotify.com/playlist/3HkDsf6j0O9rsDNgUhEIXQ?si=f8ca220512104c68">Bachata</a>
+      </div>
+
+      <div id = "contact" class= "contact"> 
+        <h1>Contact</h1>
+        <a class = "social" href="https://www.linkedin.com/in/jonathanpe%C3%B1a">Linkedin</a>
+        <a class = "social" href="https://github.com/JonathanPena17">GitHub</a>
+      </div>
+
+      <form action="/form-handler" method="POST">
+      <div class = "client">
+        <label for="name-field">Name:</label>
+        </br>
+        <input type="text" id="name-field" name="name-input" class="form-field" required="" minlength="2" maxlength="30" size="50">
+        </br>
+        <label for="email-field">Email:</label>
+        </br>
+        <input type="email" id="email-field" name="email-input" class="form-field" required="" maxlength="64" size="50">
+        </br>
+        <label for="subject-field">Subject:</label>
+        </br>
+        <input type="text" id="subject-field" name="subject-input" class="form-field" required="" minlength="2" maxlength="60" size="50">
+        </br>
+        <label for="message-field">Message:</label>
+        </br>
+        <input id="message-field" name="message-input" class="form-field" required="" size="50" cols="40" rows="5" aria-required="true">
+        </br>
+        <input type="submit" value="Submit" class="btn" id="submit-btn">
+        </br>
+      </div>
+      </form>
     </div>
   </body>
 </html>
