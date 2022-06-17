@@ -1,93 +1,179 @@
-
 #content {
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
     font-family: sans-serif;
     display: block;
     text-align: center;
     padding: 10px;
+    background-color: #F0F5F9;
 }
 
 #greeting-container {
   margin-top: 20px;
 }
-/*make portrait image round*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1E2022;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #C9D6DF;
+    color: black;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #52616B;
+    color: #F0F5F9;
+}
+
+/* Center text*/
+.name{
+    margin: auto;
+    align-items:center;
+    width:750px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+/* Rounded Headshot image*/
 img.rounded{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         border-radius: 50%;
-        width: 300px;
+        width: 200px;
         height: auto;
-        margin-top: 35px;
 }
 
-/*make artist images round*/
-img.rounded-corners {
-    border-radius: 50%;
-    padding: 70px;
-}
-
-/*create box for about me class*/
-.aboutme {
-    
-    background-color: #c9d6df;
-    height: 1175px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: sans-serif;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-
-h1 {
-    padding: 10px;
-    font-size: 50px;
-    text-align: center;
-}
-h2 {
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-
-h3{
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
-}
-
-/*rules for paragraphs*/
-p{
+/*Centered text*/
+.about {
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
-    font-family: sans-serif;
-    display: block;
+    align-items:center;
+    width: 750px;
     text-align: center;
     padding: 10px;
 }
 
-/* create rules for paragraph in blog*/
-p1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px;
-    font-family: sans-serif;
-    display: block;
-    text-align: left;
-    padding-left: 10px;
+/*Centered header for blog*/
+.blogheader{
+    margin: auto;
+    margin-top: 400px;
 }
 
-/* Create box for blog post*/
+/*Create blog post*/
 .blog{
     margin: auto;
     width: 700px;
-    font-family: sans-serif;
     display: block;
     text-align: left;
+    border-radius: 25px;
     background-color: #c9d6dF; 
     padding: 10px;   
+}
+/* Centered contact header*/
+.contact{
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* Adjust size and color on icons*/
+a{
+    text-decoration: none;
+    font-size: 50px;
+    padding: 10px;
+    color: #1E2022;
+}
+
+ /* Change the color of links on hover */  
+a:hover {
+    opacity: 0.7;
+}
+
+  
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Create box for translate servelt*/
+form .translate {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: #52616B;
+    color: #f2f2f2;
+}
+
+/* Create box for form servlet*/
+form .client {
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: #52616B;
+    color: #f2f2f2;
+ }
+
+.form-field {
+    resize: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
 }
