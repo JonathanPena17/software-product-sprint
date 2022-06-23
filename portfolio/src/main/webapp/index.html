@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
   </head>
   <body>
@@ -53,15 +54,15 @@
       <div class="column">
 
         <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104506/f-22-raptor/">
-        <img src="/images/F-22-Reflective-coating.jpeg"  style = "float:left" width="200" height="auto">
+        <img alt="F-22" src="/images/F-22-Reflective-coating.jpeg"  width="200" height="auto">
         </a>
         
         <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/478441/f-35a-lightning-ii/">
-        <img src="/images/F-35.jpeg" style = "float:left" width="200" height="auto">
+        <img alt="F-35" src="/images/F-35.jpeg"  width="200" height="auto">
         </a>
 
         <a href="https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104490/a-10c-thunderbolt-ii/">
-        <img src="/images/A-10-warthog-flying-tiger-scaled.jpeg" style = "float:left" width="200" height="auto">
+        <img alt="A-10" src="/images/A-10-warthog-flying-tiger-scaled.jpeg"  width="200" height="auto">
         </a>
  
       </div>
@@ -83,35 +84,48 @@
         <br/>
         <a href="https://open.spotify.com/playlist/3HkDsf6j0O9rsDNgUhEIXQ?si=f8ca220512104c68">Bachata</a>
       </div>
+    
+      <form action="/translate" method="POST">
+        <div class = "translate">
+          <label for="text">Try out my Translator!</label>
+          <input type="text" id="text" name="text" class="form-field" required="" minlength="1" maxlength="100" size="30">
+        
+          <select id="languageCode" name="languageCode">
+            <option value="">Please choose a language</option>
+            <option value="zh">Chinese</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
+            <option value="ar">Arabic</option>
+          </select>
+          <input type="submit" value="Submit" class="btn" id="submit-btn">
+        </div>
+      </form>
 
       <div id = "contact" class= "contact"> 
         <h1>Contact</h1>
-        <a class = "social" href="https://www.linkedin.com/in/jonathanpe%C3%B1a">Linkedin</a>
-        <a class = "social" href="https://github.com/JonathanPena17">GitHub</a>
+        <a href="https://github.com/JonathanPena17"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jonathanpe%C3%B1a"><i class="fa fa-linkedin"></i></a>
       </div>
 
-      <form action="/form-handler" method="POST">
+     <form action="/form-handler" method="POST">
       <div class = "client">
         <label for="name-field">Name:</label>
-        </br>
-        <input type="text" id="name-field" name="name-input" class="form-field" required="" minlength="2" maxlength="30" size="50">
-        </br>
+        <input type="text" id="name-field" name="name-input" class="form-field" minlength="2" maxlength="30" size="50" required>
         <label for="email-field">Email:</label>
-        </br>
-        <input type="email" id="email-field" name="email-input" class="form-field" required="" maxlength="64" size="50">
-        </br>
+        <input type="email" id="email-field" name="email-input" class="form-field"  maxlength="64" size="50" required>
         <label for="subject-field">Subject:</label>
-        </br>
-        <input type="text" id="subject-field" name="subject-input" class="form-field" required="" minlength="2" maxlength="60" size="50">
-        </br>
+        <input type="text" id="subject-field" name="subject-input" class="form-field" minlength="2" maxlength="60" size="50" required>
         <label for="message-field">Message:</label>
-        </br>
-        <input id="message-field" name="message-input" class="form-field" required="" size="50" cols="40" rows="5" aria-required="true">
-        </br>
+        <textarea id="message-field" name="message-input" class="form-field" size="60" cols="40" rows="5" aria-required="true" required></textarea>
         <input type="submit" value="Submit" class="btn" id="submit-btn">
-        </br>
       </div>
       </form>
+    
+      <p>Translate this page:</p>
+      <div id="google_translate_element"></div>
+      <script type="text/javascript"></script> </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     </div>
   </body>
 </html>
